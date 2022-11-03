@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+ body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+ }
+
+</style>
+<body>
+    <input type="number" id="n1" />
+    <input type="number" id="n2" />
+    <input type="number" id="n3" />
+
+    <button onclick="calcular()">Calcular</button>
+
+        <script>
+       function calcular() {
+     var n1 = document.getElementById("n1").value 
+     var n2 = document.getElementById("n2").value
+     var n3 = document.getElementById("n3").value
+
+     var media = (Number(n1) + Number(n2) + Number(n3)) / 3
+
+     if(media >= 7)
+      if(media==10)
+       alert("Parabéns, Aprovado com distinção!");
+      else
+       alert("Parabéns, Aprovado por Media! "+media);
+     else
+      alert("Reprovado!")
+
+     
+
+    
+    
+
+
+    
+
+     
+
+     
+
+
+       }
+
+
+        </script>
+
+
+</body>
+</html>
